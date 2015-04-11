@@ -1,0 +1,22 @@
+<template name="TaskListStatsTemplate">
+  <div class="task-list-stats">
+    <p>
+
+      <label for="filter-all">
+        <input id="filter-all" type="radio" name="filter" value="all" checked />
+        All ({{allCount}})
+      </label>
+
+      <label for="filter-complete">
+        <input id="filter-complete" type="radio" name="filter" value="complete" />
+        Complete ({{completeCount}})
+      </label>
+
+      <label for="filter-incomplete">
+        <input id="filter-incomplete" type="radio" name="filter" value="incomplete" />
+        Incomplete ({{incompleteCount}})
+      </label>
+      
+    </p>
+  </div>
+</template>

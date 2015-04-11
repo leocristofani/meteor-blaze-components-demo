@@ -1,0 +1,26 @@
+<head>
+  <title>Tasks with Components</title>
+</head>
+<body>
+
+<div class="l-app">
+  <header class="l-app-header">
+    <h2 class="app-title">Leonardo Cristofani - Meteor Tasks</h2>
+    {{> loginButtons}}
+    {{#if currentUser}}
+      {{> TaskInputComponent}}
+    {{/if}}
+  </header>
+  <main class="l-app-main">
+    {{> TaskListComponent}}
+  </main>
+  <footer class="l-app-footer">
+    <p class="copyright">
+      <small>Quick little project put together to test out Meteor and the new Blaze Components library. I'm quite
+             amazed by the technology.
+      </small>
+    </p>
+  </footer>
+</div>
+
+</body>

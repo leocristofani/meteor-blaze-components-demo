@@ -1,0 +1,14 @@
+<template name="TaskListItemTemplate">
+  <div class="task-list-item {{#if isPrivate}}private{{/if}} {{#if isChecked}}checked{{/if}}">
+    <input class="task-list-item-checked-toggle" type="checkbox" checked="{{isChecked}}"/>
+    <span class="task-list-item-text">{{text}} &rarr; <small>{{prettyCreatedAt}}</small></span>
+    <button class="task-list-item-delete btn btn-danger">&times;</button>
+    <button class="task-list-item-private-toggle btn">
+      {{#if isPrivate}}
+        private
+      {{else}}
+        public
+      {{/if}}
+    </button>
+  </div>
+</template>
